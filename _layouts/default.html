@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html  	lang="en" 
+		xmlns="http://www.w3.org/1999/xhtml"
+     	xmlns:fb="http://ogp.me/ns/fb#">
+	<head>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Long-form nonfiction adventure stories with scientific context">
+		<title>{{ page.title }}</title>
+        <link rel="stylesheet" href="{{ site.github.url }}/stylesheets/app.css" />
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,800" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Prompt:700" rel="stylesheet">
+		<link rel="alternate" type="application/rss+xml" title="RTMUP RSS" href="http://rtmup.com/feed.xml" />
+		<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+		<meta property="og:title" content="{{ page.og_title }}" />
+		<meta property="og:description" content="{{ page.og_description }}" />
+		<meta property="og:image" content="{{ site.url }}{{ page.og_image }}" />
+		<meta property="og:type"  content="{{ page.og_type }}" />
+		<meta property="og:locale"  content="en_US" />
+
+
+	</head>
+	
+	<body>
+		<header>
+			<img src="sg-logo.png">
+			<a class="company-name">Science Goals</a>
+			<!--<a href="about.html">About</a>-->
+		</header>
+		<div id="wrap"> <!-- used for sticky footer -->
+			<main>
+				{{content}}
+			<main>
+		</div>
+		<div id="footer"> <!-- used for sticky footer -->
+			<footer>
+				<p>© 2018 | Science Goals – Built by <a href="https://twitter.com/rtmup">@RTMUP</a> with <a href="http://jekyllrb.com/"></a></p>
+			</footer>
+		</div>
+	</body>
+</html>
