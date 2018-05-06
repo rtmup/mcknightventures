@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.mcknightventures.com [NC]
+RewriteRule ^(.*)$ https://www.mcknightventures.com/$1 [L,R=301
